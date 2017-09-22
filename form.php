@@ -1,9 +1,11 @@
 <?php
 if(isset($_POST['submit'])){
-	echo "Form di submit.";
-}
-else{
-	echo "Form gagal di submit!";
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	
+	echo $username;
+	echo "<br />";
+	echo $password;
 }
 ?>
 
@@ -15,8 +17,8 @@ else{
 <body>
 
 <form action="form.php" method="post">
-	<input type="text" placeholder="Enter Username" />
-	<input type="password" placeholder="Enter Password" />
+	<input type="text" name="username" placeholder="Enter Username" />
+	<input type="password" name="password" placeholder="Enter Password" />
 	<br />
 	<input type="submit" name="submit" />
 	
