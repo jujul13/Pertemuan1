@@ -2,7 +2,7 @@
 include "db.php";
 ?>
 <?php 
-include "functions.php";
+include "functions2.php";
 ?>
  LEVEL 2 - Delete Records from Database with PHP
 <?php
